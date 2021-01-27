@@ -18,6 +18,15 @@ public class Principale {
 		System.out.println(gson.toJson("Hello World !"));
 		
 		test("Java", 2);
+		
+		Article unArticle = new Article();
+		unArticle.setNom("Pomme");
+		unArticle.setReference("150D");
+		unArticle.setPrix(1);
+		unArticle.setStock(30);
+		
+		unArticle.approvisionnerArticle(3);
+		
 	}
 	
 	public static String test(String a, int b)
@@ -25,5 +34,9 @@ public class Principale {
 		System.out.println(a + b);
 		return a+b;
 	}
+	
+	
+	
+	
 
 }
