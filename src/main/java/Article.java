@@ -52,9 +52,8 @@ public class Article {
 		this.prix = prix;
 	}
 	
-	public int approvisionnerArticle(int nbArticle) {
+	public void approvisionnerArticle(int nbArticle) {
 		this.stock = stock + nbArticle;
-		return stock;
 	}
 	
 	
